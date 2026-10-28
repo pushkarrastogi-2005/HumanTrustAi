@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "HumanTrust AI",
+  "version": "0.2.1",
+  "description": "Human authenticity and liveness verification for video meetings",
+  "minimum_chrome_version": "116",
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "tabCapture",
+    "activeTab",
+    "offscreen",
+    "storage",
+    "notifications",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://meet.google.com/*",
+    "http://localhost:8000/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/icon128.png"
+      ],
+      "matches": [
+        "https://meet.google.com/*"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "HumanTrust AI"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://meet.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
