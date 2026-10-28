@@ -258,7 +258,7 @@ human-trust-ai/
 
 - **Developer:** [Pushkar Rastogi](https://github.com/pushkarrastogi-2005)
 - **Institution:** Department of Computer Science, CHRIST (Deemed to be University), Bangalore
-- **Project:** Fourth-Year B.Sc. Data Science & AI / BCA (Honours) Major Project — *SDG Green Tech*
+- **Project:** BCA (Honours) Major Project — *SDG Green Tech*
 
 ---
 
